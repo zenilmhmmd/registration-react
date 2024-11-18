@@ -1,0 +1,101 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle, #e3f2fd, #bbdefb); /* Soft blue gradient */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url('');
+}
+
+/* Container for Page Content */
+.page-container {
+  background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 1s ease-out; /* Smooth entrance */
+}
+
+/* Page Container Text */
+.page-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+  letter-spacing: 1px;
+}
+
+/* Submit Button */
+.submit-button {
+  background: linear-gradient(45deg, #43cea2, #185a9d); /* Vibrant gradient */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  background: linear-gradient(45deg, #2ebf91, #145276); /* Slightly adjusted gradient */
+}
+
+/* Cancel Button */
+.cancel-button {
+  background: linear-gradient(45deg, #ff6a00, #ee0979); /* Warm gradient */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff4500, #d10e6b); /* Slightly adjusted gradient */
+}
+
+/* Focus Styles */
+button:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for Smooth Entrance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .page-container {
+    padding: 30px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+}
